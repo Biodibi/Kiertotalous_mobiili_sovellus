@@ -1,0 +1,27 @@
+<resources>
+    <string-array name="entries_parcel_keys">
+        <item>pallet</item>
+        <item>trolley</item>
+    </string-array>
+
+    <string-array name="entries_parcel_values">
+        <item>Lava</item>
+        <item>Rullakko</item>
+    </string-array>
+
+    <string-array name="entries_fuel_keys">
+        <item>biogas</item>
+        <item>gasoline</item>
+        <item>diesel</item>
+        <item>electric</item>
+        <item>hydrogen</item>
+    </string-array>
+
+    <string-array name="entries_fuel_values">
+        <item>Biokaasu</item>
+        <item>Bensiini</item>
+        <item>Diesel</item>
+        <item>Sähkö</item>
+        <item>Vety</item>
+    </string-array>
+</resources>

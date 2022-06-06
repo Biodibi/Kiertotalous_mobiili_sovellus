@@ -1,0 +1,6 @@
+<resources>
+    <dimen name="card_height_large">450dp</dimen>
+    <dimen name="card_width_large">300dp</dimen>
+    <dimen name="card_height_medium">350dp</dimen>
+    <dimen name="card_width_medium">250dp</dimen>
+</resources>

@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Kiertotalous</string>
+
+    <string name="title_form">Ilmoita ylijäämä</string>
+    <string name="title_deliveries">Noudettava ylijäämä</string>
+    <string name="title_summaries">Yhteenvedot</string>
+    <string name="title_settings">Asetukset</string>
+
+    <string name="send_success">Lähetys onnistui</string>
+    <string name="no_open_deliveries">Ei avoimia lähetyksiä</string>
+    <string name="logout_inprogress">Uloskirjautuminen käynnissä</string>
+
+    <string name="error_check_input_text">Tarkista tieto</string>
+    <string name="error_check_input_value">Sallittu: %s - %s</string>
+    <string name="error_missing_parcel">Ei lähetyksiä</string>
+    <string name="error_request_failed">Pyyntö epäonnistui</string>
+    <string name="error_check_weight">Paino on pienempi tai sama kuin asetettu taarapaino</string>
+    <string name="error_check_weight_potential_duplicate">Paino on liki sama kuin edellisessä ilmoituksessa eli varmistetaan ettei samaa ilmoitusta lähetetä vahingossa kahdesti.\n\nOnko ilmoitus uusi?</string>
+    <string name="error_deliveries_subscription_failed">Lähetyksien haku epäonnistui. Yritä uudelleen.</string>
+    <string name="error_bluetooth_disabled">Bluetooth poissa käytöstä</string>
+    <string name="error_bluetooth_pairing_missing">Bluetooth paritus puuttuu</string>
+
+    <string name="email">Sähköposti</string>
+    <string name="password">Salasana</string>
+    <string name="login">Kirjaudu</string>
+
+    <string name="time">Aika</string>
+    <string name="weight">Paino</string>
+    <string name="weight_kg">Paino (kg)</string>
+    <string name="count">Määrä</string>
+    <string name="distance">Matka (km)</string>
+    <string name="fuelConsumption">Keskikulutus (l/kg/100 km)</string>
+    <string name="additional_info">Lisätietoja</string>
+    <string name="add">Lisää kuljetus</string>
+    <string name="send">Lähetä</string>
+    <string name="try_again">Yritä uudelleen</string>
+    <string name="tare">Taara</string>
+    <string name="pallet_tare">Lava (kg)</string>
+    <string name="trolley_tare">Rullakko (kg)</string>
+    <string name="save">Tallenna</string>
+    <string name="yes">Kyllä</string>
+    <string name="no">Ei</string>
+    <string name="logout">Kirjaudu ulos</string>
+</resources>

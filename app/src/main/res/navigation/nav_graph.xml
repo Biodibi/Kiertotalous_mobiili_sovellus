@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.oamk.kiertotalous.ui.LoginFragment"
+        tools:layout="@layout/fragment_login">
+    </fragment>
+
+    <fragment
+        android:id="@+id/deliveryFormFragment"
+        android:name="com.oamk.kiertotalous.ui.DeliveryFormFragment"
+        tools:layout="@layout/fragment_delivery_form">
+    </fragment>
+
+    <fragment
+        android:id="@+id/deliveriesFragment"
+        android:name="com.oamk.kiertotalous.ui.DeliveriesFragment"
+        tools:layout="@layout/fragment_deliveries">
+    </fragment>
+
+    <fragment
+        android:id="@+id/summaryFragment"
+        android:name="com.oamk.kiertotalous.ui.SummaryFragment"
+        tools:layout="@layout/fragment_summary">
+        <argument
+            android:name="delivery"
+            app:argType="com.oamk.kiertotalous.model.Delivery" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.oamk.kiertotalous.ui.SettingsFragment"
+        tools:layout="@layout/fragment_settings">
+    </fragment>
+
+    <action
+        android:id="@+id/action_global_loginFragment"
+        app:destination="@+id/loginFragment"
+        app:launchSingleTop="true"/>
+
+    <action
+        android:id="@+id/action_global_deliveryFormFragment"
+        app:destination="@+id/deliveryFormFragment"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/action_global_deliveriesFragment"
+        app:destination="@+id/deliveriesFragment"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/action_global_summaryFragment"
+        app:destination="@+id/summaryFragment" />
+
+    <action
+        android:id="@+id/action_global_settingsFragment"
+        app:destination="@+id/settingsFragment" />
+
+</navigation>

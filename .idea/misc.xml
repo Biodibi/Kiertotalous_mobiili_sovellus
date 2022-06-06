@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.39897435897435896" />
+        <entry key="app/src/main/res/drawable/anim_bluetooth_connecting.xml" value="0.1005" />
+        <entry key="app/src/main/res/drawable/anim_connecting.xml" value="0.106" />
+        <entry key="app/src/main/res/drawable/bg_item_white.xml" value="0.3515625" />
+        <entry key="app/src/main/res/drawable/bg_item_white_pressed.xml" value="0.278" />
+        <entry key="app/src/main/res/drawable/divider_gray.xml" value="0.212109375" />
+        <entry key="app/src/main/res/drawable/ic_1.xml" value="0.1675" />
+        <entry key="app/src/main/res/drawable/ic_2.xml" value="0.1675" />
+        <entry key="app/src/main/res/drawable/ic_3.xml" value="0.1675" />
+        <entry key="app/src/main/res/drawable/ic_4.xml" value="0.1675" />
+        <entry key="app/src/main/res/drawable/ic_aaa2.xml" value="0.3" />
+        <entry key="app/src/main/res/drawable/ic_add.xml" value="0.28857421875" />
+        <entry key="app/src/main/res/drawable/ic_add_a_photo.xml" value="0.3" />
+        <entry key="app/src/main/res/drawable/ic_bluetooth.xml" value="0.3" />
+        <entry key="app/src/main/res/drawable/ic_bluetooth_connected.xml" value="0.1875" />
+        <entry key="app/src/main/res/drawable/ic_bluetooth_connected_black1_48dp.xml" value="0.1675" />
+        <entry key="app/src/main/res/drawable/ic_bluetooth_connected_black2_48dp.xml" value="0.1675" />
+        <entry key="app/src/main/res/drawable/ic_bluetooth_connected_black3_48dp.xml" value="0.1675" />
+        <entry key="app/src/main/res/drawable/ic_bluetooth_connecting_1.xml" value="0.1875" />
+        <entry key="app/src/main/res/drawable/ic_bluetooth_connecting_2.xml" value="0.1875" />
+        <entry key="app/src/main/res/drawable/ic_bluetooth_disconnected.xml" value="0.1875" />
+        <entry key="app/src/main/res/drawable/ic_bluetooth_searching_1.xml" value="0.1533203125" />
+        <entry key="app/src/main/res/drawable/ic_bluetooth_searching_2.xml" value="0.34375" />
+        <entry key="app/src/main/res/drawable/ic_bluetooth_searching_3.xml" value="0.34375" />
+        <entry key="app/src/main/res/drawable/ic_bluetooth_searching_4.xml" value="0.34375" />
+        <entry key="app/src/main/res/drawable/ic_delete.xml" value="0.278" />
+        <entry key="app/src/main/res/drawable/ic_directions.xml" value="0.1675" />
+        <entry key="app/src/main/res/drawable/ic_drag_handle.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.39897435897435896" />
+        <entry key="app/src/main/res/drawable/ic_map.xml" value="0.39897435897435896" />
+        <entry key="app/src/main/res/drawable/ic_phonelink_setup.xml" value="0.3" />
+        <entry key="app/src/main/res/drawable/ic_settings.xml" value="0.24114583333333334" />
+        <entry key="app/src/main/res/drawable/ic_settings_svgrepo_com.xml" value="0.11" />
+        <entry key="app/src/main/res/drawable/list_item_pressed.xml" value="0.26927083333333335" />
+        <entry key="app/src/main/res/drawable/rounded.xml" value="0.33544921875" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.203125" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_maps.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.26197916666666665" />
+        <entry key="app/src/main/res/layout/content_splash.xml" value="0.26197916666666665" />
+        <entry key="app/src/main/res/layout/fragment_admin.xml" value="0.1375" />
+        <entry key="app/src/main/res/layout/fragment_deliveries.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_delivery_form.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/fragment_first.xml" value="0.26197916666666665" />
+        <entry key="app/src/main/res/layout/fragment_form.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/fragment_login.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/fragment_main.xml" value="0.15989583333333332" />
+        <entry key="app/src/main/res/layout/fragment_map.xml" value="0.203125" />
+        <entry key="app/src/main/res/layout/fragment_review.xml" value="0.196875" />
+        <entry key="app/src/main/res/layout/fragment_second.xml" value="0.26197916666666665" />
+        <entry key="app/src/main/res/layout/fragment_settings.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_splash.xml" value="0.2821557971014493" />
+        <entry key="app/src/main/res/layout/fragment_summary.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/list_item_delivery.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/list_item_image.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/list_item_parcel.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/list_item_summary_image.xml" value="0.16698717948717948" />
+        <entry key="app/src/main/res/layout/login_activity.xml" value="0.203125" />
+        <entry key="app/src/main/res/layout/main_activity.xml" value="0.24583333333333332" />
+        <entry key="app/src/main/res/layout/main_fragment.xml" value="0.24583333333333332" />
+        <entry key="app/src/main/res/layout/recyclerview_adapter.xml" value="0.18697916666666667" />
+        <entry key="app/src/main/res/layout/review_fragment.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/settings_activity.xml" value="0.28072916666666664" />
+        <entry key="app/src/main/res/menu/admin_menu.xml" value="0.15989583333333332" />
+        <entry key="app/src/main/res/menu/courier_menu.xml" value="0.15989583333333332" />
+        <entry key="app/src/main/res/menu/deliveries_menu.xml" value="0.119921875" />
+        <entry key="app/src/main/res/menu/logcat_menu.xml" value="0.15989583333333332" />
+        <entry key="app/src/main/res/menu/main_menu.xml" value="0.291796875" />
+        <entry key="app/src/main/res/menu/menu_with_settings.xml" value="0.16796875" />
+        <entry key="app/src/main/res/menu/menu_with_settings_and_directions.xml" value="0.16796875" />
+        <entry key="app/src/main/res/menu/patient_menu.xml" value="0.15989583333333332" />
+        <entry key="app/src/main/res/menu/settings_only_menu.xml" value="0.2" />
+        <entry key="app/src/main/res/menu/store_menu.xml" value="0.3890625" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.296875" />
+        <entry key="app/src/main/res/xml/root_preferences.xml" value="0.26197916666666665" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

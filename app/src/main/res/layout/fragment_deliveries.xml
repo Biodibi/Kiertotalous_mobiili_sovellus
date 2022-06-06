@@ -1,0 +1,200 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <import type="android.view.View" />
+        <variable
+            name="viewModel"
+            type="com.oamk.kiertotalous.ui.DeliveriesViewModel" />
+        <variable
+            name="data"
+            type="com.oamk.kiertotalous.ui.DeliveryItemData" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/deliveriesRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@id/weightInputLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:itemCount="10"
+            tools:listitem="@layout/list_item_delivery" />
+
+        <Button
+            android:id="@+id/FetchDeliveriesRetryButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="200dp"
+            android:text="@string/try_again"
+            app:visibility="@{viewModel.isFetchDeliveriesRetryButtonVisible ? View.VISIBLE : View.GONE}"
+            app:layout_constraintBottom_toBottomOf="@id/deliveriesRecyclerView"
+            app:layout_constraintEnd_toEndOf="@id/deliveriesRecyclerView"
+            app:layout_constraintStart_toStartOf="@id/deliveriesRecyclerView"
+            app:layout_constraintTop_toTopOf="@id/deliveriesRecyclerView" />
+
+        <androidx.core.widget.ContentLoadingProgressBar
+            style="?android:progressBarStyleLarge"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:indeterminate="true"
+            android:indeterminateTint="@color/green"
+            app:visibility="@{viewModel.isFetchDeliveriesProgressVisible ? View.VISIBLE : View.GONE}"
+            app:layout_constraintBottom_toBottomOf="@id/deliveriesRecyclerView"
+            app:layout_constraintEnd_toEndOf="@id/deliveriesRecyclerView"
+            app:layout_constraintStart_toStartOf="@id/deliveriesRecyclerView"
+            app:layout_constraintTop_toTopOf="@id/deliveriesRecyclerView" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/weightInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:visibility="@{viewModel.totalWeightValue > 0  ? View.VISIBLE : View.GONE}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/deliveriesRecyclerView">
+
+            <TextView
+                android:id="@+id/totalWeightTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="@{viewModel.totalWeight}"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/distanceInputLayout"
+                tools:text="200 kg" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/distanceInputLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="200dp"
+                android:hint="@string/distance"
+                app:hintTextAppearance="@style/HintTextLabel"
+                app:visibility="@{viewModel.isInputFormVisible ? View.VISIBLE : View.GONE}"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/fuelConsumptionInputLayout"
+                app:layout_constraintTop_toBottomOf="@id/totalWeightTextView">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textCursorDrawable="@null"
+                    android:textSize="14sp"
+                    android:inputType="numberDecimal"
+                    android:digits="0123456789.,"
+                    android:imeOptions="actionNext"
+                    android:nextFocusDown="@+id/fuelConsumption" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/fuelConsumptionInputLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:minWidth="200dp"
+                android:hint="@string/fuelConsumption"
+                app:hintTextAppearance="@style/HintTextLabel"
+                app:visibility="@{viewModel.isInputFormVisible ? View.VISIBLE : View.GONE}"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/fuelSpinner"
+                app:layout_constraintTop_toBottomOf="@id/distanceInputLayout">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textCursorDrawable="@null"
+                    android:textSize="14sp"
+                    android:inputType="numberDecimal"
+                    android:digits="0123456789.,"
+                    android:imeOptions="actionDone" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Spinner
+                android:id="@+id/fuelSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp"
+                android:drawSelectorOnTop="true"
+                android:minWidth="200dp"
+                android:entries="@array/entries_fuel_values"
+                app:visibility="@{viewModel.isInputFormVisible ? View.VISIBLE : View.GONE}"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/formButton"
+                app:layout_constraintTop_toBottomOf="@id/fuelConsumptionInputLayout" />
+
+            <Button
+                android:id="@+id/formButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="200dp"
+                android:layout_marginBottom="20dp"
+                android:text="@{viewModel.isInputFormVisible ? @string/send : @string/add}"
+                android:enabled="@{viewModel.isButtonEnabled}"
+                app:visibility="@{viewModel.isSubmitSummaryInProgress ? View.INVISIBLE : View.VISIBLE}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/fuelSpinner" />
+
+            <androidx.core.widget.ContentLoadingProgressBar
+                style="?android:progressBarStyleLarge"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:indeterminate="true"
+                android:indeterminateTint="@color/green"
+                app:visibility="@{viewModel.isSubmitSummaryInProgress ? View.VISIBLE : View.GONE}"
+                app:layout_constraintBottom_toBottomOf="@id/formButton"
+                app:layout_constraintEnd_toEndOf="@id/formButton"
+                app:layout_constraintStart_toStartOf="@id/formButton"
+                app:layout_constraintTop_toTopOf="@id/formButton" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/focusableView"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <TextView
+            android:id="@+id/emptyView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="@string/no_open_deliveries"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:visibility="@{viewModel.isFetchDeliveriesProgressVisible || viewModel.totalWeightValue > 0 ? View.GONE : View.VISIBLE}"
+            tools:text="@string/no_open_deliveries" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
